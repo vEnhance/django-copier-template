@@ -36,3 +36,10 @@ jobs:
 
       - name: 🧪 Run tests
         run: make test
+{% if use_coveralls %}
+
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
+{% endif %}
