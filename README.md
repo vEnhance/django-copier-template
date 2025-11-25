@@ -46,6 +46,8 @@ if you opted for those testing options.
 
 ## Updating
 
+To pull the most recent version of the template:
+
 ```bash
-uv run copier update
+make copier
 ```
