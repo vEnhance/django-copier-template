@@ -44,7 +44,19 @@ Then, add `django_extensions` to `INSTALLED_APPS`.
 You should also `uv add --dev pytest-xdist` and `uv add --dev pytest-cov`
 if you opted for those testing options.
 
-## Updating
+## Deploy script
+
+In all the projects, the following assumptions hold:
+
+- There is a remote called `origin` on GitHub
+- There is a remote called `production` on the actual server to push to
+- The primary branch is called `main` (not `master`)
+
+Then `deploy.sh` checks if GitHub and the local are in sync
+(which in particular means that the pre-push hooks have passed).
+If so, it then updates production to match both.
+
+## Updating this template
 
 To pull the most recent version of the template:
 
