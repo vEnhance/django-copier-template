@@ -3,12 +3,12 @@ _subdirectory: template
 
 use_pytest_xdist:
   type: bool
-  default: true
+  default: false
   help: Use pytest-xdist for parallel test execution (-n auto)?
 
 use_pytest_cov:
   type: bool
-  default: true
+  default: false
   help: Use pytest-cov for coverage reporting?
 
 use_coveralls:
