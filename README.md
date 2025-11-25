@@ -27,15 +27,22 @@ Should be pretty straightforward.
 
 ## Setup
 
-Something like the following:
+Something like the following in an empty Git repository:
 
 ```bash
 uv init
 uv add django django-extensions
-uv add --dev copier pytest-django
-uv run copier gh:vEnhance/django-copier-template .
-uv run django-admin startproject CONFIG_NAME
+uv add --dev copier pytest-django prek pyright
+uv run copier copy gh:vEnhance/django-copier-template .
+uv run django-admin startproject config .
+make install
+make migrate
 ```
+
+Then, add `django_extensions` to `INSTALLED_APPS`.
+
+You should also `uv add --dev pytest-xdist` and `uv add --dev pytest-cov`
+if you opted for those testing options.
 
 ## Updating
 
