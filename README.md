@@ -15,12 +15,12 @@ This is used to set up a [Django](https://www.djangoproject.com/)
 project using [uv](https://docs.astral.sh/uv/).
 It uses the following frameworks:
 
-- prek for pre-commit
-- ruff
-- pyright for type checking
-- djlint for linting Django templates
-- prettier for linting CSS, JavaScript, Markdown, JSON, TOML, YAML
-- django-extensions for some extra goodies
+- [prek](https://github.com/vEnhance/prek) for pre-commit
+- [ruff](https://docs.astral.sh/ruff/) for Python formatting and linting
+- [pyright](https://microsoft.github.io/pyright/) for type checking
+- [djlint](https://djlint.com/) for linting Django templates
+- [prettier](https://prettier.io/) for linting CSS, JavaScript, Markdown, JSON, TOML, YAML
+- [django-extensions](https://django-extensions.readthedocs.io/) for some extra goodies
 - [pytest-django](https://pytest-django.readthedocs.io/en/latest/index.html) for testing
 
 Should be pretty straightforward.
